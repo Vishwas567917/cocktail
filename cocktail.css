@@ -1,0 +1,182 @@
+/*javascript_*/
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Poppins&family=Roboto:wght@300&display=swap');
+*{
+margin:0;   
+padding:0;
+box-sizing:border-box;
+}    
+
+body{
+background:#FFAA01;  
+font-family: 'Poppins', sans-serif;
+}
+
+.container{
+padding:20px;  
+width:350px;
+background:#010101;
+border-radius:7px;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+overflow:hidden;
+}
+
+.container .cocktail-data{
+display:none;        
+}
+
+.container .search-box{
+height:50px; 
+width:100%;
+border-radius:5px;
+display:flex;
+align-items:center;
+padding:5px;
+background:#282834;
+}
+
+.container .search-box i{
+color:silver; 
+position:relative;
+left:8px;
+}
+
+.container .search-box input{
+all:unset; 
+height:50px;
+width:100%;
+margin-left:20px;
+border-top-right-radius:30px;
+border-bottom-right-radius:30px;
+color:silver;
+}
+
+
+.container .img-box{
+height:150px;        
+width:150px;
+margin-top:25px;
+border-radius:100%;
+margin-left:80px;
+}
+
+.container .img-box img{
+height:100%;      
+width:100%;
+border-radius:100%;
+}
+
+.container .cocktail-name{
+height:35px;
+background:#FFAA01;  
+color:white;
+position:absolute;
+left:50%;
+transform:translate(-50%,-50%);
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:30px;
+margin-top:-10px;
+padding-left:15px;
+padding-right:15px;
+white-space:nowrap;
+}
+
+.container .cocktail-name i{
+color:black;        
+}
+
+.container .ingredients-box{
+width:100%;
+margin-top:40px;
+padding:5px;
+}
+
+.container .ingredients-box h3{
+color:white; 
+font-size:14px;
+position:relative;
+top:5px;
+margin-left:5px;
+color:#FFAA01;
+}
+
+.container .ingredients-box .ingredients ul{
+display:grid;  
+grid-template-columns:auto auto;
+gap:0.8em 1.1em;
+padding:1.2em 0 0 1.2em;
+font-size:1em;
+}
+
+.container .ingredients-box .ingredients li{
+color:white; 
+font-size:12px;
+}
+
+.container .start-mixing-btn{
+all:unset;        
+height:35px;
+width:100px;
+border-radius:30px;
+color:#FFAA01;  
+display:flex;
+justify-content:center;
+align-items:center;
+margin-top:15px;
+font-size:12px;
+cursor:pointer;
+border:1px solid #FFAA01;
+}
+
+.container .start-mixing-btn:hover{
+background:#FFAA01;    
+color:black;
+}
+
+.instructions{
+height:100%;  
+width:100%;
+position:absolute;
+top:0;
+left:0;
+background:#010101;
+border-radius:7px;
+padding:20px;
+left:-100%;
+overflow:hidden;
+overflow-y:scroll;
+transition:all .2s;
+}
+
+.instructions .close-btn{
+height:35px;   
+width:35px;
+background:#FFAA01;  
+color:black;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:3px;
+cursor:pointer;
+}
+
+.instructions .instruction{
+margin-top:10px;
+color:white;
+font-size:14px;
+}
+
+.container .msg{
+color:grey;  
+text-align:center;
+margin-top:15px;
+}
+
+::selection{
+background:rgb(100, 149, 237,0.8); 
+color:white;
+}
